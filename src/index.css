@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.main {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.main .main-name {
+    font-size: 100px;
+    text-align: center;
+    color: rgba(175, 47, 47, 0.15);
+}
+
+.todo {
+    padding: 16px 16px 16px 60px;
+    border: none;
+    background: rgba(0, 0, 0, 0.003);
+    box-shadow: -2px 5px 20px 4px rgba(214, 214, 214, 0.88);
+    width: 100%;
+    font-size: 24px;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+
+}
+
+.list-ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.item {
+    width: 100%;
+    padding: 10px 16px 10px 60px;
+    border: 1px solid #eee;
+    border-top: none;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.item div {
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    margin-left: 50px;
+
+}
+.item p{
+    position: absolute;
+    right: 21px;
+    top: 16px;
+    width: 27px;
+    height: 28px;
+    margin: 0;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.item .toggle {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+.item .toggle:before {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#ededed" stroke-width="3"/></svg>');
+}
+
+.item.complete .toggle:before {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#bddad5" stroke-width="3"/><path fill="#5dc2af" d="M72 25L42 71 27 56l-4 4 20 20 34-52z"/></svg>');
+}
+
+.complete div {
+    text-decoration: line-through;
+
+}
+
+.left-number {
+    float: left;
+}
+
+.tab {
+    padding: 15px 50px;
+    border: 1px solid #eee;
+    border-top: none;
+}
+
+.tab-item {
+    text-align: center;
+
+}
+
+.tab-item a {
+    margin: 0 10px;
+    padding: 2px 9px;
+    color: #000;
+    text-decoration: none;
+}
+
+.tab-item a.active {
+    border: 1px solid #ceb8b8;
+    border-radius: 5px;
+}
+
+
