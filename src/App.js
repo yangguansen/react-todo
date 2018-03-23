@@ -6,7 +6,6 @@ import Tab from './components/tab';
 import List from './components/listItem';
 import { setListByTabStatus } from "./selector";
 
-
 class TodoList extends React.Component {
 	constructor( props ) {
 		super( props );
@@ -77,7 +76,7 @@ class TodoList extends React.Component {
 	}
 
 	render() {
-		const { tabStatus, switchTab, eventList, visibilityList } = this.props;
+		const { tabStatus, switchTab, eventList, visibilityList, match } = this.props;
 
 		return (
 
@@ -102,7 +101,6 @@ class TodoList extends React.Component {
 }
 
 const mapStateToProps = ( state ) => {
-
 	return {
 		tabStatus: state.tabStatus,
 		eventList: state.eventList,
