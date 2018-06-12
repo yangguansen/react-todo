@@ -17,7 +17,7 @@ ReactDOM.render(
 	<Provider store={store}>
 		<Router>
 			<div>
-				<Route path='/todo/:status' component={TodoApp}></Route>
+				<Route path='/todo/:status' exact component={TodoApp}></Route>
 
 				<Route path='/test' component={TestRoute}></Route>
 			</div>

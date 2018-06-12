@@ -93,7 +93,7 @@ class TodoList extends React.Component {
 					} )}
 				</ul>
 
-				<Tab left={eventList} onTabChange={switchTab} tabStatus={tabStatus}></Tab>
+				<Tab left={eventList}></Tab>
 
 			</div>
 

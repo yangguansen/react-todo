@@ -9,7 +9,7 @@ const localStorageOperate = {
 	},
 
 	getItem(){
-		return window.localStorage.getItem(this.name);
+		return window.localStorage.getItem(this.name) || '[]';
 	}
 }
 
